@@ -1,70 +1,75 @@
 <!DOCTYPE html>
-<html lang="ru" >
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <title>Портфолио</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Визитка</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <script src="JS/emerge.js"></script>
-  <style>
-   body{
-     background-color: #2f4557;
-   }
-   .ava {
-    display: inline-block;
-    border-radius: 50%;
-    overflow: hidden;
-    max-width: auto;
-    height: auto;
-    background-size: 20px;
-    background-color: #000000;
-   }
-    .name {
-    color: white;
-    font-family: Comfortaa;
-   }
-    .language {
-    color: white;
-    font-family: Comfortaa;
-   }
-    .skills {
-    color: white;
-    font-family: Comfortaa;
-   }
-    .timeInWork {
-    color: white;
-    font-family: Comfortaa;
-   }
-    .exampleCode {
-    color: #3574e8;
-    font-family: Comfortaa;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-   }
-    .otherItems {
-    color: #3574e8;
-    font-family: Comfortaa;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-   }
-  </style>
+  <script src="JS/listener_click_button.js" defer></script>
+  <link rel="stylesheet" href="CSS/style.css">
+
 </head>
+
 <body>
-    <div class="emerge" data-spin="true" id="ava">
-      <center><img src="https://i.ibb.co/HHPZKds/2022-01-30-143312.png" alt="" class="ava"></center>
+
+  <div class="emerge" data-spin="true" data-effect="zoom" data-expose="true" data-origin="top">
+    <button id="toggle-theme-btn">
+      <img src="img/moon.png" id="toggle-theme-image">
+    </button>
+    <div class="hero">
+      <div class="container hero__container">
+        <div class="hero__about">
+          <h1 class="hero__title">Java разработчик</h1>
+          <h2 class="hero__subtitle">Всем привет!</h2>
+          <p class="hero__description">
+           📌 Меня зовут Артём Юников. Я - Java разработчик. Кроме того, частично владею языком программирования Python и Unity.
+           Мой стаж работы составляет 2 года. Это непосредственно время программирования в Minecraft-сфере, а также в чистой Java. ⚡
+          <br><br>
+           За это время имею достаточно большой опыт работы.
+           <br><br>
+           🏆 Предоставлял свои услуги следующим крупным проектам (разработчик):
+           <br><br>
+           — Unidev Studio
+           <br>
+           — RaifuLand
+           <br>
+           — ShoulderSpace
+           <br>
+           — MilitaryWorld
+           <br><br>
+           Также, сотрудничал с десятком менее известных, но тоже проектами.
+           <br><br>
+           ⚡ Что я могу Вам предложить:
+           <br><br>
+           — Создаю Desktop приложения на основе JavaFX.
+           <br>
+           — Создание сайтов.
+           <br>
+           — Дизайн.
+           <br>
+           — Пишу Minecraft плагины на заказ, включая все версии.
+           <br>
+           — Разрабатываю сборки серверов.
+           <br>
+           — Способен настроить VDS.
+          </p>
+          <h2 class="hero__subtitle">Соц.Сети:</h2>
+          <br>
+          <div class="hero__links">
+            <a class="hero__link" href="https://vk.com/freendev" target="_blank"><i class='bx bxl-vk'></i></a>
+            <a class="hero__link" href="https://t.me/freen0ff" target="_blank"><i class='bx bxl-telegram'></i></a>
+          </div>
+        </div>
+        <div class="hero__box">
+          <img class="hero__box-img" src="img/main_photo.jpg" alt="">
+        </div>
+      </div>
     </div>
-      <div class="emerge" data-effect="slide" data-continue="true" data-await="ava" data-hold="500">
-      <center><h1 class="name">Артём Бадалов</h1></center>
-      <center><h3 class="language">Язык: Java</h3></center>
-      <center><h3 class="timeInWork">Стаж работы: 1 год</h3></center>
-      <center><h3 class="skills">Библиотеки: Bukkit API, SQL, SQLite, VK API, JSON Simple, Swing, ImageIO, JavaX, Russian Post, SnakeYML.</h3></center>
-      <hr size="2" width="50%" align="center" color="black">
-      <center><a href="https://github.com/Boss9013/ExampleCode" target="_blank" class="exampleCode">Пример кода</a></center>
-      <center><a href="socialNetwork.html" class="otherItems">Соц.Сети</a></center>
-      <center><a href="Projects.html" class="otherItems">Проекты</a></center>
-      <center><a href="blog.html" class="otherItems">Блог</a></center>
-      <center><a href="pay.html" class="otherItems">Оплатить заказ/Помочь</a></center>
-      <hr size="2" width="50%" align="center" color="black">
   </div>
 </body>
 </html>
